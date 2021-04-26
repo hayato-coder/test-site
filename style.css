@@ -1,0 +1,21 @@
+header {
+    height:100px;
+    color:#0a00cc;
+    font-size:80px;
+    background-color: #25cc00;
+    padding: 5px 500px;
+}
+
+div ul {
+    list-style: none;
+}
+div ul li {
+    font-size:60px;
+}
+div ul li span{
+    font-weight: 700;
+    padding-right: 50px;
+}
+img {
+    height:100px;
+}
