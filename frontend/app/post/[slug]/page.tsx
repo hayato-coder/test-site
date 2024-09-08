@@ -32,11 +32,12 @@ interface PostProps {
 }
 
 export default async function PostPage({ params }: PostProps) {
+    const { slug } = params
     const post =   {
-      _id: '1',
-      slug: '/post/1',
-      title: 'Sample Post Title 1',
-      description: 'This is a brief description of the sample post 1.',
+      _id: params,
+      slug: '/post/' + slug,
+      title: 'Sample Post Title' + slug,
+      description: 'This is a brief description of the sample post' + slug,
     }
   
     if (!post) {
