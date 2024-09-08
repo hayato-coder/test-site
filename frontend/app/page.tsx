@@ -9,7 +9,21 @@ interface Post {
 }
 
 export default function Home() {
-  const allPosts: Post[] = [];
+  const allPosts: Post[] = [
+    {
+      _id: '1',
+      slug: '/post/1',  // 記事の詳細ページへのパス
+      title: 'Sample Post Title',
+      description: 'This is a brief description of the sample post.',  // オプションの説明
+    },
+    {
+      _id: '2',
+      slug: '/post/2',  // 記事の詳細ページへのパス
+      title: 'Sample Post Title',
+      description: 'This is a brief description of the sample post.',  // オプションの説明
+    },
+  ];
+  // allPostsはバックエンドにアクセスしてデータベースから取ってくる
   return (
     <div className="prose dark:prose-invert">
       {allPosts.map((post) => (
