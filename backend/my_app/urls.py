@@ -1,7 +1,8 @@
 from django.urls import path
 
 from . import views
+from .views import PostAll
 
 urlpatterns = [
-    path("", views.index, name="index"),
+    path("index/", PostAll.as_view(), name="post-all"),
 ]
